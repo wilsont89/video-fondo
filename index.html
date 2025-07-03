@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Video de fondo</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .fondo-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 20%;
+      font-size: 2em;
+      font-family: sans-serif;
+      background-color: rgba(0, 0, 0, 0.4); /* fondo semitransparente */
+    }
+  </style>
+</head>
+<body>
+  <video class="fondo-video" autoplay muted loop>
+    <source src="../kinal_mejor.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <div class="contenido">
+    <h1>Bienvenidos a mi sitio</h1>
+    <p>Este es un fondo con video</p>
+  </div>
+</body>
+</html>
